@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chill cùng FooDrink</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/cart.css">
+    <link rel="stylesheet" href="./assets/img/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+  <div class="main transparent grid">
+  <div id="header">
+    <span class="header_local">
+      <i class=" fa-solid fa-utensils"></i>
+      <h1>Resto.s</h1>  
+    </span>
+
+    <nav class="header_catergory">
+      <a href="#home" class="home">Home</a>
+      <a href="#Dishes grid" class="dishes">Dishes</a>
+      <a href="#about" class="about">About</a>
+      <a href="#menu" class="menu">Menu</a>
+      <a href="#comment" class="review">Review</a>
+      <a href="#order" class="order">Order</a>
+    </nav>
+
+    <div class="header_tools">
+      <span class="icon navigation" style="border-radius: 50%;">
+        <i class="fa-solid fa-bars"></i>
+      </span>
+      <span class="icon search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </span>
+      <span class="icon heart">
+        <i class="fa-solid fa-heart"></i>
+      </span>
+      <span class="icon cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="quanlity-cart">0</span>
+      </span>
+    </div>
+  </div>
+
+  <div class="product-noti">
+    <i class="fa-solid fa-circle-info noti-infor "></i>
+    <p class="phara-noti">This product has been added to the cart</p>
+    <i class="fa-solid fa-xmark noti-close"></i>
+  </div>
+<!-- nagiation on tablet and mobile -->
+  <ul class="nav">
+    <li class="nav_list"><a href="#home">Home</a></li>
+    <li class="nav_list"><a href="#Dishes grid">Dishes</a></li>
+    <li class="nav_list"><a href="#about">About</a></li>
+    <li class="nav_list"><a href="#menu">Menu</a></li>
+    <li class="nav_list"><a href="#comment">Review</a></li>
+    <li class="nav_list"><a href="#order">Order</a></li>
+  </ul>
+  <!-- Shopping cart noti -->
+  <div class="buy-cart">
+    <i class=" close fa-solid fa-xmark"></i>
+    <div class="shop-cart">
+      <div class="shop-heading">
+        <h1 class="shop-title">
+           Your Cart
+        </h1>
+      </div>
+      <div class="shop-item">
+        
+      </div>
+      <div class="buy-cart-action">
+        <span class="buy-cart__total-item">
+          <h1 class="buy-infor_total">Total: </h1>
+          <p class="buy-infor_total-value"></p>
+        </span>
+      </div>
+      <button class="buy-btn button-more">Buy Now</button>
+    </div>
+    
+    <div class="buy-detail">
+      
+    </div>
+
+  </div>
+<!-- Input-search -->
+  <form class="input-search hiden">
+    <div class="content-search">
+      <input type="text" class="search" placeholder="Search hear...">
+        <i class="fa-solid fa-magnifying-glass glasses"></i>
+        <ul class="history-search">
+          <li class="list-item">
+            header_local
+            <i class="delete fa-solid fa-xmark"></i>
+          </li>
+          <li class="list-item">
+            header_local
+            <i class="delete fa-solid fa-xmark"></i>
+          </li>
+          <li class="list-item">
+            header_local
+            <i class="delete fa-solid fa-xmark"></i>
+          </li>
+        </ul>
+    </div>
+      <span class="close">
+        <i class="delete fa-solid fa-xmark"></i>
+      </span>
+  </form>
+
+<!-- Home section  -->
+
+<section id="home" class="home">
+  <div class=" swiper-container home-slide">
+    <div class="swiper-wrapper wrapper">
+      <div class="swiper-slide slide">
+          <div class="slider_content">
+            <h1 class="slider_content-heading">
+              Our Special Dish 
+            </h1>
+          <span class="slider_content--subheading">Hot Pizza</span>
+          <p class="slider_content-phara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus dolor cumque?</p>
+  
+          <a href="#order" class=" button-more">Order Now</a>
+        </div>
+  
+        <div class="slider_image">
+          <img src="./assets/img/home-img-3.png" alt="">
+        </div>
+      </div>
+  
+      <div class="swiper-slide slide"  >
+        <div class="slider_content">
+          <h1 class="slider_content-heading">
+            Our Special Dish 
+          </h1>
+        <span class="slider_content--subheading">Fried Chicken</span>
+        <p class="slider_content-phara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus dolor cumque?</p>
+  
+        <a href="#order" class="button-more">Order Now</a>
+      </div>
+  
+      <div class="slider_image">
+        <img src="./assets/img/home-img-2.png" alt="">
+      </div>
+    </div>
+  
+      <div class="swiper-slide slide" >
+        <div class="slider_content">
+          <h1 class="slider_content-heading">
+            Our Special Dish 
+          </h1>
+        <span class="slider_content--subheading">Spicy Noodles</span>
+        <p class="slider_content-phara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus dolor cumque?</p>
+    
+        <a href="#order" class="button-more">Order Now</a>
+      </div>
+    
+      <div class="slider_image">
+        <img src="./assets/img/home-img-1.png" alt="">
+      </div>
+    </div>
+    </div>
+  <div class="swiper-pagination"></div>
+</div>
+</section>
+
+<section id="Dishes grid">
+  <h1 class="title">
+    Our Dishes
+  </h1>
+  <p class="heading">
+    POPULAR DISHES
+  </p>
+
+  <div class="product grid wide">
+    <div class="row">
+      <div class=" col t-4 p-3 m-12">
+        <div class="box">
+          <span class="icon icon-heart">
+            <i class="fa-solid fa-heart"></i>
+          </span>
+          <div class="image">
+            <img src="./assets/img/dish-1.png" alt="">
+          </div>
+          <span class="product-name food-name">
+            Hamburger
+          </span>
+          <span class=" star">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </span>
+          <span class="price">
+            $15.49
+          </span>
+          <span class="choice">
+            <button class="addto">Add to cart</button>
+            <button class="buyfood">Buy Now</button>
+          </span>
+        </div>
+      </div>
+
+      <div class=" col t-4 p-3 m-12">
+        <div class="box">
+          <span class="icon icon-heart">
+            <i class="fa-solid fa-heart"></i>
+          </span>
+          <div class="image">
+            <img src="./assets/img/dish-2.png" alt="">
+          </div>
+          <span class="product-name food-name">
+            Chicken-Wings
+          </span>
+          <span class=" star">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </span>
+          <span class="price">
+            $15
+          </span>
+          <span class="choice">
+            <button class="addto">Add to cart</button>
+            <button class="buyfood">Buy Now</button>
+          </span>
+        </div>
+      </div>
+
+      <div class=" col t-4 p-3 m-12">
+        <div class="box">
+          <span class="icon icon-heart">
+            <i class="fa-solid fa-heart"></i>
+          </span>
+          <div class="image">
+            <img src="./assets/img/dish-3.png" alt="">
+          </div>
+          <span class="product-name food-name">
+            Chicken Gril
+          </span>
+          <span class=" star">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </span>
+          <span class="price">
+            $12
+          </span>
+          <span class="choice">
+            <button class="addto">Add to cart</button>
+            <button class="buyfood">Buy Now</button>
+          </span>
+        </div>
+      </div>
+
+      <div class=" col t-4 p-3 m-12">
+        <div class="box">
+          <span class="icon icon-heart">
+            <i class="fa-solid fa-heart"></i>
+          </span>
+          <div class="image">
+            <img src="./assets/img/dish-4.png" alt="">
+          </div>
+          <span class="product-name food-name">
+            Pizza
+          </span>
+          <span class=" star">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </span>
+          <span class="price">
+            $13
+          </span>
+          <span class="choice">
+            <button class="addto">Add to cart</button>
+            <button class="buyfood">Buy Now</button>
+          </span>
+        </div>
+      </div>
+
+      <div class=" col t-4 p-3 m-12">
+       <div class="box">
+        <span class="icon icon-heart">
+          <i class="fa-solid fa-heart"></i>
+        </span>
+        <div class="image">
+          <img src="./assets/img/dish-5.png" alt="">
+        </div>
+        <span class="product-name food-name">
+          Bread Chocolate
+        </span>
+        <span class=" star">
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </span>
+        <span class="price">
+          $10
+        </span>
+        <span class="choice">
+          <button class="addto">Add to cart</button>
+          <button class="buyfood">Buy Now</button>
+        </span>
+       </div>
+      </div>
+
+      <div class=" col t-4 p-3 m-12">
+        <div class="box">
+          <span class="icon icon-heart">
+            <i class="fa-solid fa-heart"></i>
+          </span>
+          <div class="image">
+            <img src="./assets/img/dish-6.png" alt="">
+          </div>
+          <span class="product-name food-name">
+            Chicken KFC
+          </span>
+          <span class=" star">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </span>
+          <span class="price">
+            $7
+          </span>
+          <span class="choice">
+            <button class="addto">Add to cart</button>
+            <button class="buyfood">Buy Now</button>
+          </span>
+        </div>
+      </div>
+
+      
+
+    </div>
+  </div>
+</section>
+
+<section id="about">
+
+  <h1 class="title">About Us</h1>
+  <p class="heading">
+    WHY CHOOSE US?
+  </p>
+  <div class="about-list">
+    <div class="about-image">
+      <img src="./assets/img/about-img.png" alt="">
+    </div>
+    <div class="about-content">
+      <h2 class="title-phara">Best Food In The Country</h2>
+      <p class="about-phara">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Dolore, Sequi Corrupti Corporis Quaerat Voluptatem Ipsam Neque Labore Modi Autem, Saepe Numquam Quod Reprehenderit Rem? Tempora Aut Soluta Odio Corporis Nihil!</p>
+      <p class="about-phara">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Aperiam, Nemo. Sit Porro Illo Eos Cumque Deleniti Iste Alias, Eum Natus.</p>
+  
+      <div class="about-button">
+        <button class="about-payments button">
+          <i class="fa-solid fa-sack-dollar"></i>
+          Easy Payments</button>
+        <button class="about-Localtion button">
+          <i class="fa-solid fa-shop"></i>
+          Local</button>
+      </div>
+  
+      <button class="about-infor button-more">Read More</button>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <h1 class="title">Our Menu</h1>
+  <p class="heading">TODAY'S SPECIALITY</p>
+
+  <div class="menu-list grid wide">
+      <div class="row">
+          <div class="col p-4 t-6 m-12">
+              <div class="menu-items">
+                <span class="icon icon-heart" style="z-index: 2;">
+                  <i class="fa-solid fa-heart"></i>
+                </span>
+
+                <div class="menu-image image">
+                  <img src="./assets/img/menu-1.jpg" alt="">
+                </div>
+
+                <p class="menu-name food-name ">
+                  Delicious Pizza
+                </p>
+                <p class="menu-phara">
+                  Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.
+                </p>
+
+                <span class="price">
+                  $15
+                </span>
+                <span class="choice">
+                  <button class="addto">Add to cart</button>
+                  <button class="buyfood">Buy Now</button>
+                </span>
+              </div>
+          </div>
+
+          <div class="col p-4 t-6 m-12">
+            <div class="menu-items">
+              <span class="icon icon-heart" style="z-index: 2;">
+                <i class="fa-solid fa-heart"></i>
+              </span>
+
+              <div class="menu-image image">
+                <img src="./assets/img/menu-2.jpg" alt="">
+              </div>
+
+              <p class="menu-name food-name">
+                Delicious Hamburger
+              </p>
+              <p class="menu-phara">
+                Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.
+              </p>
+
+              <span class="price">
+                $20
+              </span>
+              <span class="choice">
+                <button class="addto">Add to cart</button>
+                <button class="buyfood">Buy Now</button>
+              </span>
+            </div>
+        </div>
+
+        <div class="col p-4 t-6 m-12">
+          <div class="menu-items">
+            <span class="icon icon-heart" style="z-index: 2;">
+              <i class="fa-solid fa-heart"></i>
+            </span>
+
+            <div class="menu-image image">
+              <img src="./assets/img/menu-3.jpg" alt="">
+            </div>
+
+            <p class="menu-name food-name">
+              Delicious Cake
+            </p>
+            <p class="menu-phara">
+              Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.
+            </p>
+
+            <span class="price">
+              $25
+            </span>
+            <span class="choice">
+              <button class="addto">Add to cart</button>
+              <button class="buyfood">Buy Now</button>
+            </span>
+          </div>
+      </div>
+
+      <div class="col p-4 t-6 m-12">
+        <div class="menu-items">
+          <span class="icon icon-heart" style="z-index: 2;">
+            <i class="fa-solid fa-heart"></i>
+          </span>
+
+          <div class="menu-image image">
+            <img src="./assets/img/menu-4.jpg" alt="">
+          </div>
+
+          <p class="menu-name food-name">
+            Delicious Icream
+          </p>
+          <p class="menu-phara">
+            Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.
+          </p>
+
+          <span class="price">
+            $5
+          </span>
+          <span class="choice">
+            <button class="addto">Add to cart</button>
+            <button class="buyfood">Buy Now</button>
+          </span>
+        </div>
+    </div>
+
+    <div class="col p-4 t-6 m-12">
+      <div class="menu-items">
+        <span class="icon icon-heart" style="z-index: 2;">
+          <i class="fa-solid fa-heart"></i>
+        </span>
+
+        <div class="menu-image image">
+          <img src="./assets/img/menu-5.jpg" alt="">
+        </div>
+
+        <p class="menu-name food-name">
+          Delicious Pizza
+        </p>
+        <p class="menu-phara">
+          Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.
+        </p>
+
+        <span class="price">
+          $30
+        </span>
+        <span class="choice">
+          <button class="addto">Add to cart</button>
+          <button class="buyfood">Buy Now</button>
+        </span>
+      </div>
+  </div>
+
+  <div class="col p-4 t-6 m-12">
+    <div class="menu-items">
+      <span class="icon icon-heart" style="z-index: 2;">
+        <i class="fa-solid fa-heart"></i>
+      </span>
+
+      <div class="menu-image image">
+        <img src="./assets/img/menu-6.jpg" alt="">
+      </div>
+
+      <p class="menu-name food-name">
+        Delicious Cake
+      </p>
+      <p class="menu-phara">
+        Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.
+      </p>
+
+      <span class="price">
+        $23
+      </span>
+      <span class="choice">
+        <button class="addto">Add to cart</button>
+        <button class="buyfood">Buy Now</button>
+      </span>
+    </div>
+</div>
+
+<div class="col p-4 t-6 m-12">
+  <div class="menu-items">
+    <span class="icon icon-heart" style="z-index: 2;">
+      <i class="fa-solid fa-heart"></i>
+    </span>
+
+    <div class="menu-image image">
+      <img src="./assets/img/menu-7.jpg" alt="">
+    </div>
+
+    <p class="menu-name food-name">
+      Delicious Drink Vegetable
+    </p>
+    <p class="menu-phara">
+      Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.
+    </p>
+
+    <span class="price">
+      $17
+    </span>
+    <span class="choice">
+      <button class="addto">Add to cart</button>
+      <button class="buyfood">Buy Now</button>
+    </span>
+  </div>
+</div>
+
+<div class="col p-4 t-6 m-12">
+  <div class="menu-items">
+    <span class="icon icon-heart" style="z-index: 2;">
+      <i class="fa-solid fa-heart"></i>
+    </span>
+
+    <div class="menu-image image image">
+      <img src="./assets/img/menu-8.jpg" alt="">
+    </div>
+
+    <p class="menu-name food-name">
+      Delicious Pizza
+    </p>
+    <p class="menu-phara">
+      Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.
+    </p>
+
+    <span class="price">
+      $12
+    </span>
+    <span class="choice">
+      <button class="addto">Add to cart</button>
+      <button class="buyfood">Buy Now</button>
+    </span>
+  </div>
+</div>
+
+<div class="col p-4 t-6 m-12">
+  <div class="menu-items">
+    <span class="icon icon-heart" style="z-index: 2;">
+      <i class="fa-solid fa-heart"></i>
+    </span>
+
+    <div class="menu-image image">
+      <img src="./assets/img/menu-9.jpg" alt="">
+    </div>
+
+    <p class="menu-name food-name">
+      Delicious Orange-Juice
+    </p>
+    <p class="menu-phara">
+      Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.
+    </p>
+
+    <span class="price">
+      $26
+    </span>
+    <span class="choice">
+      <button class="addto">Add to cart</button>
+      <button class="buyfood">Buy Now</button>
+    </span>
+  </div>
+</div>
+
+
+</div>
+  </div>
+</section>
+
+<section id="comment">
+  <h1 class="title">Customer's Review</h1>
+  <p class="heading">WHAT THEY SAY</p>
+
+  <div class="swiper-content comment-slide grid wide">
+    <div class="swiper-wrapper cmt-slide ">
+      <div class="swiper-slide slider col p-4 t-6 m-12">
+              <div class="comment-content">
+                <div class="cmt-head">
+                  <div class="cmt-image">
+                    <img src="./assets/img/pic-1.png" alt="">
+                  </div>
+                  <div class="cmt-infor">
+                  <div class="comment-name">
+                    Harry Maguire
+                  </div>
+                  <span class=" star">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </span>
+                  </div>
+                  <span class="cmt-icon">
+                    <i class="fas fa-quote-right"></i>
+                  </span>
+                </div>
+
+                <p class="cmt-phara">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat consequuntur repellendus aperiam deserunt nihil, corporis fugit voluptatibus voluptate totam neque illo placeat eius quis laborum aspernatur quibusdam. Ipsum, magni.
+                </p>
+              </div>
+        </div>
+      <div class="swiper-slide slider col p-4 t-6 m-12">
+            <div class="comment-content">
+              <div class="cmt-head">
+                <div class="cmt-image">
+                  <img src="./assets/img/pic-1.png" alt="">
+                </div>
+              <div class="cmt-infor">
+                <div class="comment-name">
+                  Harry Maguire
+                </div>
+                <span class=" star">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </span>
+              </div>
+                <span class="cmt-icon">
+                  <i class="fas fa-quote-right"></i>
+                </span>
+              </div>
+
+              <p class="cmt-phara">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat consequuntur repellendus aperiam deserunt nihil, corporis fugit voluptatibus voluptate totam neque illo placeat eius quis laborum aspernatur quibusdam. Ipsum, magni.
+              </p>
+            </div>
+      </div>
+      <div class="swiper-slide slider col p-4 t-6 m-12">
+        <div class="comment-content">
+          <div class="cmt-head">
+            <div class="cmt-image">
+              <img src="./assets/img/pic-1.png" alt="">
+            </div>
+          <div class="cmt-infor">
+            <div class="comment-name">
+              Harry Maguire
+            </div>
+            <span class=" star">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </span>
+          </div>
+            <span class="cmt-icon">
+              <i class="fas fa-quote-right"></i>
+            </span>
+          </div>
+
+          <p class="cmt-phara">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat consequuntur repellendus aperiam deserunt nihil, corporis fugit voluptatibus voluptate totam neque illo placeat eius quis laborum aspernatur quibusdam. Ipsum, magni.
+          </p>
+        </div>
+        </div>
+      <div class="swiper-slide slider col p-4 t-6 m-12">
+        <div class="comment-content">
+          <div class="cmt-head">
+            <div class="cmt-image">
+              <img src="./assets/img/pic-1.png" alt="">
+            </div>
+          <div class="cmt-infor">
+            <div class="comment-name">
+              Harry Maguire
+            </div>
+            <span class=" star">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </span>
+          </div>
+            <span class="cmt-icon">
+              <i class="fas fa-quote-right"></i>
+            </span>
+          </div>
+
+          <p class="cmt-phara">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat consequuntur repellendus aperiam deserunt nihil, corporis fugit voluptatibus voluptate totam neque illo placeat eius quis laborum aspernatur quibusdam. Ipsum, magni.
+          </p>
+        </div>
+        </div>
+        <div class="swiper-slide slider col p-4 t-6 m-12">
+          <div class="comment-content">
+            <div class="cmt-head">
+              <div class="cmt-image">
+                <img src="./assets/img/pic-1.png" alt="">
+              </div>
+             <div class="cmt-infor">
+              <div class="comment-name">
+                Harry Maguire
+              </div>
+              <span class=" star">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </span>
+             </div>
+              <span class="cmt-icon">
+                <i class="fas fa-quote-right"></i>
+              </span>
+            </div>
+  
+            <p class="cmt-phara">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat consequuntur repellendus aperiam deserunt nihil, corporis fugit voluptatibus voluptate totam neque illo placeat eius quis laborum aspernatur quibusdam. Ipsum, magni.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide slider col p-4 t-6 m-12">
+          <div class="comment-content">
+            <div class="cmt-head">
+              <div class="cmt-image">
+                <img src="./assets/img/pic-1.png" alt="">
+              </div>
+             <div class="cmt-infor">
+              <div class="comment-name">
+                Harry Maguire
+              </div>
+              <span class=" star">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </span>
+             </div>
+              <span class="cmt-icon">
+                <i class="fas fa-quote-right"></i>
+              </span>
+            </div>
+  
+            <p class="cmt-phara">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat consequuntur repellendus aperiam deserunt nihil, corporis fugit voluptatibus voluptate totam neque illo placeat eius quis laborum aspernatur quibusdam. Ipsum, magni.
+            </p>
+          </div>
+          </div>
+    </div>
+  </div>
+</section>
+
+<section id="order">
+  <div class="order-content">
+    <h1 class="title">
+      Order Now
+    </h1>
+    <p class="heading">
+      FREE AND FAST
+    </p>
+       <div class="form">
+        <form class="form-order">
+          <div class="form-information">
+            <div class="fomr-group">
+              <label for="fullname">Your Name</label>
+              <input type="text" placeholder="Fill your name" id="fullname">
+            </div>
+  
+            <div class="fomr-group">
+              <label for="number">Your Number</label>
+              <input type="number" placeholder="Fill your number" id="number">
+            </div>
+  
+            <div class="fomr-group">
+              <label for="address">Your Address</label>
+              <input type="text" placeholder="Fill your Address" id="address">
+            </div>
+
+          <div class="form-plain height" >
+            <div class="fomr-group">
+              <label for="message">Your Message</label>
+              <input type="text" placeholder="Fill your message" id="message">
+            </div>
+          </div>
+        </form>
+
+       <div class="order-now">
+         <span class="buy-notifical">Buy Food ToBe Happy 
+           <i class="fa-regular fa-face-smile"></i>
+          </span>
+          <button class="button-more button-buy show newBuy">Buy Now</button>
+       </div>
+      </div>
+  
+  </div>
+</section>
+
+
+
+<section id="footer">
+  <div class="row footer">
+    <div class="col p-3 t-2 m-12 ">
+     <div class="footer-col">
+        <h1 class="footer-heading">Quick Links
+        </h1>
+        <ul class="footer-list">
+          <a href="#home" class="footer-item quick-link">Home </a>
+          <a href="#Dishes grid" class="footer-item quick-link">Dishes</a>
+          <a href="#about" class="footer-item quick-link">About</a>
+          <a href="#menu" class="footer-item quick-link">Menu</a>
+          <a href="#comment" class="footer-item quick-link">Review</a>
+          <a href="#order" class="footer-item quick-link">Order</a>
+        </ul>
+     </div>
+    </div>
+
+    <div class="col p-3 t-2 m-12 ">
+      <div class="footer-col">
+        <h1 class="footer-heading">Contact Infor
+        </h1>
+        <ul class="footer-list">
+          <a class="footer-item"><i class='bx bxs-phone-call'></i>0346540662</a>
+          <a class="footer-item"><i class="fa-solid fa-envelope"></i>ndt13102003@gmail.com</a>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col p-3 t-2 m-12 ">
+     <div class="footer-col">
+      <h1 class="footer-heading">Quick Infor
+      </h1>
+      <ul class="footer-list">
+        <a href="https://www.facebook.com/nguyenducthang1310" class="footer-item facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/thagnngyuen13/" class="footer-item instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/TechNguyen" class="footer-item"><i class="fa-brands fa-github"></i></a>
+      </ul>
+     </div>
+    </div>
+  </div>
+</section>
+</div>
+  <div class="load-container">
+    <img src="./assets/img/loader.gif" alt="">
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script type="module" src="./javascript/main.js"></script>
+<script src="./javascript/React.js"></script>
+</html>
