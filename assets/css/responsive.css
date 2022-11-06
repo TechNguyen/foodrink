@@ -1,0 +1,244 @@
+/*  mobile */
+
+@media (max-width: 740px) {
+    .navigation {
+        display: flex;
+    }
+    .icon {
+        border-radius: 50%;
+        outline: 2px var(--black) solid;
+    }
+    .box {
+        margin-bottom: 35px;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+    #header {
+        width: 100%;
+        display: flex;
+    }
+    .header_catergory {
+        display: none;
+        /* flex-direction: column; */
+    }
+    .header_tools .icon{
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+        margin: 7px;
+    }
+    .header_local i {
+        font-size: 20px;
+    }
+    .header_local h1 {
+        font-size: 15px;
+    }
+    .nav {
+        top: 9%;
+    }
+    .input-search .search {
+        padding: 6px;
+        font-size: 18px;
+    }
+    .content-search i {
+        font-size: 20px;
+    }
+    .slider_content {
+        display: block;
+    }
+    .about-list {
+        flex-direction: column;
+    }
+    .about-content .title-phara {
+        font-size: 25px;
+    }
+    .about-content .about-phara {
+        font-size: 15px
+    }
+    .slide {
+        flex-direction: column;
+    }
+    .slider_content-heading  {
+        font-size: 16px;
+    }
+    .slider_content--subheading {
+        font-size: 35px;
+    }
+    .slider_content-phara {
+        font-size: 18px;
+    }
+    .cart .quanlity-cart {
+        font-size: 14px;
+        top: -40%;
+        width: 25px;
+        height: 25px;
+        right: -55%;
+    }
+    .form-plain input {
+        padding-bottom: 100px;
+    }
+    .order-now button {
+        font-size: 16px;
+    }
+    .button-buy {
+        padding: 15px 20px;
+    }
+    .shop-cart {
+        width: 90%;
+        height: 90%;
+    }
+    .buy-btn {
+        font-size: 15px;
+    }
+    .button-more {
+        font-size: 10px;
+    }
+    .list-item h6 {
+        font-size: 20px;
+    }
+    .content-search i {
+        font-size: 20px;
+    }
+    .delete {
+        font-size: 20px;
+    }
+    .search-noti_name {
+        font-size: 15px;
+    }
+    .search-noti_phara {
+        font-size: 13px;
+    }
+    .menu-item {
+        width: 40%;
+        height: 50%;
+    }
+    .menu-phara {
+        font-size: 16px;
+    }
+    .menu-name {
+        font-size: 16px;
+    }
+    .price {
+        font-size: 18px;
+    }
+    .form-message {
+        font-size: 15px;
+    }
+    .item-name {
+        font-size: 15px;
+    }
+    .item-price{
+        font-size: 15px;
+    }
+    .item-button_quanlity button {
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+    }
+    .buy-infor_total-value {
+        font-size: 17px;
+    }
+    .buy-infor_total{
+        font-size: 15px;
+    }
+    .buy-btn {
+        width: 130px;
+    }
+    .buy-cart button {
+        font-size: 15px;
+    }
+    .shopping-image {
+        height: 100%;
+    }
+    .cmt-phara {
+        font-size: 16px;
+    }
+    .comment-name {
+        font-size: 18px;
+    }
+    .cmt-image {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+    .cmt-image img {
+        object-fit: cover;
+    }
+    .address-localtion {
+        width: 40%;
+        font-size: 13px;
+        padding: 15px 10px;
+    }
+}
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .navigation {
+        display: flex;
+    }
+    .image img {
+        height: 158px;
+    }
+    .menu-image {
+        height: 196px;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+    .header_catergory {
+        display: none;
+    }
+    .nav {
+        display: flex;
+    }
+    .about-list {
+        flex-direction: column;
+    }
+    .about-content .title-phara {
+        font-size: 32px;
+    }
+    .address-localtion {
+        width: 18%;
+        font-size: 13px;
+    }
+    .shop-cart {
+        width: 60%;
+    }
+    .cmt-image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    .cmt-image img {
+        object-fit: cover;
+    }
+    .address-localtion {
+        padding: 15px 10px;
+    }
+}
+/* Pc */
+@media (min-width: 1024px){
+    .navigation {
+        display: none;
+    }
+    .image img {
+        height: 170px;
+    }
+    .menu-image {
+        height: 196px;
+    }
+    .cmt-image {
+        width: 100px;
+        height: 100px;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .nav {
+        display: none;
+    }
+}

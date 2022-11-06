@@ -19,7 +19,7 @@
     
 </head>
 <body>
-  <div class="main transparent grid">
+<div class="main transparent grid">
   <div id="header">
     <span class="header_local">
       <i class=" fa-solid fa-utensils"></i>
@@ -39,7 +39,7 @@
       <span class="icon navigation" style="border-radius: 50%;">
         <i class="fa-solid fa-bars"></i>
       </span>
-      <span class="icon search">
+      <span class="icon header_search">
         <i class="fa-solid fa-magnifying-glass"></i>
       </span>
       <span class="icon heart">
@@ -59,57 +59,46 @@
   </div>
 <!-- nagiation on tablet and mobile -->
   <ul class="nav">
-    <li class="nav_list"><a href="#home">Home</a></li>
-    <li class="nav_list"><a href="#Dishes grid">Dishes</a></li>
-    <li class="nav_list"><a href="#about">About</a></li>
-    <li class="nav_list"><a href="#menu">Menu</a></li>
-    <li class="nav_list"><a href="#comment">Review</a></li>
-    <li class="nav_list"><a href="#order">Order</a></li>
+    <li class="nav_list"><a class="nav_list-link" href="#home">Home</a></li>
+    <li class="nav_list"><a class="nav_list-link" href="#Dishes grid">Dishes</a></li>
+    <li class="nav_list"><a class="nav_list-link" href="#about">About</a></li>
+    <li class="nav_list"><a class="nav_list-link" href="#menu">Menu</a></li>
+    <li class="nav_list"><a class="nav_list-link" href="#comment">Review</a></li>
+    <li class="nav_list"><a class="nav_list-link" href="#order">Order</a></li>
   </ul>
   <!-- Shopping cart noti -->
   <div class="buy-cart">
     <i class=" close fa-solid fa-xmark"></i>
     <div class="shop-cart">
-      <div class="shop-heading">
-        <h1 class="shop-title">
-           Your Cart
-        </h1>
-      </div>
-      <div class="shop-item">
-        
-      </div>
-      <div class="buy-cart-action">
-        <span class="buy-cart__total-item">
-          <h1 class="buy-infor_total">Total: </h1>
-          <p class="buy-infor_total-value"></p>
-        </span>
-      </div>
-      <button class="buy-btn button-more">Buy Now</button>
-    </div>
-    
-    <div class="buy-detail">
-      
-    </div>
+        <div class="shop-heading">
+          <h1 class="shop-title">
+             Your Shopping Cart
+          </h1>
+        </div>
+        <div class="shop-item ">
+         
+          </div>
 
-  </div>
+          <div class="buy-cart-action">
+            <span class="buy-cart__total-item">
+              <h1 class="buy-infor_total">Total: </h1>
+              <p class="buy-infor_total-value"></p>
+            </span>
+          </div>
+          <button class="buy-btn button-more">Buy Now</button>
+          <button class="order-now moreBuy">
+            Continue shopping
+           </button>
+        </div>
+      </div>
+
 <!-- Input-search -->
-  <form class="input-search hiden">
+  <form class="input-search scrollYafter">
     <div class="content-search">
-      <input type="text" class="search" placeholder="Search hear...">
+      <input type="text" class="search" placeholder="Search hear..." spellcheck="false">
         <i class="fa-solid fa-magnifying-glass glasses"></i>
         <ul class="history-search">
-          <li class="list-item">
-            header_local
-            <i class="delete fa-solid fa-xmark"></i>
-          </li>
-          <li class="list-item">
-            header_local
-            <i class="delete fa-solid fa-xmark"></i>
-          </li>
-          <li class="list-item">
-            header_local
-            <i class="delete fa-solid fa-xmark"></i>
-          </li>
+          
         </ul>
     </div>
       <span class="close">
@@ -211,6 +200,33 @@
           </span>
         </div>
       </div>
+      <div class=" col t-4 p-3 m-12">
+        <div class="box">
+          <span class="icon icon-heart">
+            <i class="fa-solid fa-heart"></i>
+          </span>
+          <div class="image">
+            <img src="./assets/img/banhtaco.jpg" alt="">
+          </div>
+          <span class="product-name food-name">
+            Taco Cake
+          </span>
+          <span class=" star">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </span>
+          <span class="price">
+            $10.99
+          </span>
+          <span class="choice">
+            <button class="addto">Add to cart</button>
+            <button class="buyfood">Buy Now</button>
+          </span>
+        </div>
+      </div>
 
       <div class=" col t-4 p-3 m-12">
         <div class="box">
@@ -231,7 +247,7 @@
             <i class="fa-regular fa-star"></i>
           </span>
           <span class="price">
-            $15
+            $15.29
           </span>
           <span class="choice">
             <button class="addto">Add to cart</button>
@@ -259,7 +275,7 @@
             <i class="fa-regular fa-star"></i>
           </span>
           <span class="price">
-            $12
+            $12.99
           </span>
           <span class="choice">
             <button class="addto">Add to cart</button>
@@ -287,7 +303,7 @@
             <i class="fa-regular fa-star"></i>
           </span>
           <span class="price">
-            $13
+            $13.49
           </span>
           <span class="choice">
             <button class="addto">Add to cart</button>
@@ -315,7 +331,7 @@
           <i class="fa-regular fa-star"></i>
         </span>
         <span class="price">
-          $10
+          $9.99
         </span>
         <span class="choice">
           <button class="addto">Add to cart</button>
@@ -343,7 +359,7 @@
             <i class="fa-regular fa-star"></i>
           </span>
           <span class="price">
-            $7
+            $7.29
           </span>
           <span class="choice">
             <button class="addto">Add to cart</button>
@@ -351,15 +367,28 @@
           </span>
         </div>
       </div>
-
-      
-
     </div>
   </div>
 </section>
 
-<section id="about">
+<div id="handle-notifi">
+  <!-- Search noti -->
 
+<!-- Success-noti -->
+
+<!-- Error-noti -->
+
+
+<!-- Warning-noti -->
+
+<!-- Done-noti -->
+
+
+</div>
+
+
+
+<section id="about">
   <h1 class="title">About Us</h1>
   <p class="heading">
     WHY CHOOSE US?
@@ -374,12 +403,14 @@
       <p class="about-phara">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Aperiam, Nemo. Sit Porro Illo Eos Cumque Deleniti Iste Alias, Eum Natus.</p>
   
       <div class="about-button">
-        <button class="about-payments button">
-          <i class="fa-solid fa-sack-dollar"></i>
-          Easy Payments</button>
-        <button class="about-Localtion button">
-          <i class="fa-solid fa-shop"></i>
-          Local</button>
+        <button class="about-payments button about_button-active">
+          <i class=" about-icon fa-solid fa-sack-dollar"></i>
+          <h5 class="about-name">Easy Payments</h5>
+        </button>
+        <button class="about-Localtion button about_button-active">
+          <i class=" about-icon fa-solid fa-shop"></i>
+          <h5 class="about-name">Local</h5>
+        </button>
       </div>
   
       <button class="about-infor button-more">Read More</button>
@@ -411,7 +442,7 @@
                 </p>
 
                 <span class="price">
-                  $15
+                  $20.19
                 </span>
                 <span class="choice">
                   <button class="addto">Add to cart</button>
@@ -438,7 +469,7 @@
               </p>
 
               <span class="price">
-                $20
+                $17.39
               </span>
               <span class="choice">
                 <button class="addto">Add to cart</button>
@@ -465,7 +496,7 @@
             </p>
 
             <span class="price">
-              $25
+              $21.99
             </span>
             <span class="choice">
               <button class="addto">Add to cart</button>
@@ -492,7 +523,7 @@
           </p>
 
           <span class="price">
-            $5
+            $5.99
           </span>
           <span class="choice">
             <button class="addto">Add to cart</button>
@@ -519,7 +550,7 @@
         </p>
 
         <span class="price">
-          $30
+          $30.09
         </span>
         <span class="choice">
           <button class="addto">Add to cart</button>
@@ -546,7 +577,7 @@
       </p>
 
       <span class="price">
-        $23
+        $23.69
       </span>
       <span class="choice">
         <button class="addto">Add to cart</button>
@@ -573,7 +604,7 @@
     </p>
 
     <span class="price">
-      $17
+      $17.19
     </span>
     <span class="choice">
       <button class="addto">Add to cart</button>
@@ -600,7 +631,7 @@
     </p>
 
     <span class="price">
-      $12
+      $14.79
     </span>
     <span class="choice">
       <button class="addto">Add to cart</button>
@@ -627,7 +658,7 @@
     </p>
 
     <span class="price">
-      $26
+      $25.89
     </span>
     <span class="choice">
       <button class="addto">Add to cart</button>
@@ -636,7 +667,167 @@
   </div>
 </div>
 
+<div class="col p-4 t-6 m-12">
+  <div class="menu-items">
+    <span class="icon icon-heart" style="z-index: 2;">
+      <i class="fa-solid fa-heart"></i>
+    </span>
 
+    <div class="menu-image image">
+      <img src="./assets/img/270_crop_TIRAMISU.jpg" alt="">
+    </div>
+
+    <p class="menu-name food-name ">
+      Tiramisu Cake
+    </p>
+    <p class="menu-phara">
+      Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.
+    </p>
+
+    <span class="price">
+      $7.12
+    </span>
+    <span class="choice">
+      <button class="addto">Add to cart</button>
+      <button class="buyfood">Buy Now</button>
+    </span>
+  </div>
+</div>
+
+<div class="col p-4 t-6 m-12">
+  <div class="menu-items">
+    <span class="icon icon-heart" style="z-index: 2;">
+      <i class="fa-solid fa-heart"></i>
+    </span>
+
+    <div class="menu-image image">
+      <img src="./assets/img/270_crop_BANHCHUOI.jpg" alt="">
+    </div>
+
+    <p class="menu-name food-name ">
+      Banana Cake
+    </p>
+    <p class="menu-phara">
+      Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.
+    </p>
+
+    <span class="price">
+      $6.49
+    </span>
+    <span class="choice">
+      <button class="addto">Add to cart</button>
+      <button class="buyfood">Buy Now</button>
+    </span>
+  </div>
+</div>
+
+<div class="col p-4 t-6 m-12">
+  <div class="menu-items">
+    <span class="icon icon-heart" style="z-index: 2;">
+      <i class="fa-solid fa-heart"></i>
+    </span>
+
+    <div class="menu-image image">
+      <img src="./assets/img/270_crop_MOUSSECACAO.png" alt="">
+    </div>
+
+    <p class="menu-name food-name ">
+      Cacao Cake
+    </p>
+    <p class="menu-phara">
+      Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.
+    </p>
+
+    <span class="price">
+      $6.19
+    </span>
+    <span class="choice">
+      <button class="addto">Add to cart</button>
+      <button class="buyfood">Buy Now</button>
+    </span>
+  </div>
+</div>
+
+<div class="col p-4 t-6 m-12">
+  <div class="menu-items">
+    <span class="icon icon-heart" style="z-index: 2;">
+      <i class="fa-solid fa-heart"></i>
+    </span>
+
+    <div class="menu-image image">
+      <img src="./assets/img/270_crop_PHOMAITRAXANH.jpg" alt="">
+    </div>
+
+    <p class="menu-name food-name ">
+      Cake Matcha
+    </p>
+    <p class="menu-phara">
+      Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.
+    </p>
+
+    <span class="price">
+      $4.98
+    </span>
+    <span class="choice">
+      <button class="addto">Add to cart</button>
+      <button class="buyfood">Buy Now</button>
+    </span>
+  </div>
+</div>
+
+<div class="col p-4 t-6 m-12">
+  <div class="menu-items">
+    <span class="icon icon-heart" style="z-index: 2;">
+      <i class="fa-solid fa-heart"></i>
+    </span>
+
+    <div class="menu-image image">
+      <img src="./assets/img/01b9696b860549-banhphap_0000s_0001_buttercroissant.jpg" alt="">
+    </div>
+
+    <p class="menu-name food-name ">
+      Pure Butter Croissant
+    </p>
+    <p class="menu-phara">
+      Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.
+    </p>
+
+    <span class="price">
+      $3.98
+    </span>
+    <span class="choice">
+      <button class="addto">Add to cart</button>
+      <button class="buyfood">Buy Now</button>
+    </span>
+  </div>
+</div>
+
+<div class="col p-4 t-6 m-12">
+  <div class="menu-items">
+    <span class="icon icon-heart" style="z-index: 2;">
+      <i class="fa-solid fa-heart"></i>
+    </span>
+
+    <div class="menu-image image">
+      <img src="./assets/img/a1c4d22a41ec76-banhphap_0003s_0000_chocobuttercroissant.jpg" alt="">
+    </div>
+
+    <p class="menu-name food-name ">
+      Chocolate Croissant Cake
+    </p>
+    <p class="menu-phara">
+      Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.
+    </p>
+
+    <span class="price">
+      $4.88
+    </span>
+    <span class="choice">
+      <button class="addto">Add to cart</button>
+      <button class="buyfood">Buy Now</button>
+    </span>
+  </div>
+</div>
 </div>
   </div>
 </section>
@@ -651,7 +842,7 @@
               <div class="comment-content">
                 <div class="cmt-head">
                   <div class="cmt-image">
-                    <img src="./assets/img/pic-1.png" alt="">
+                    <img src="./assets/img/harymargie.jpg" alt="">
                   </div>
                   <div class="cmt-infor">
                   <div class="comment-name">
@@ -679,11 +870,11 @@
             <div class="comment-content">
               <div class="cmt-head">
                 <div class="cmt-image">
-                  <img src="./assets/img/pic-1.png" alt="">
+                  <img src="./assets/img/harykane.jpg" alt="">
                 </div>
               <div class="cmt-infor">
                 <div class="comment-name">
-                  Harry Maguire
+                  Harry Kane
                 </div>
                 <span class=" star">
                   <i class="fa-regular fa-star"></i>
@@ -707,11 +898,11 @@
         <div class="comment-content">
           <div class="cmt-head">
             <div class="cmt-image">
-              <img src="./assets/img/pic-1.png" alt="">
+              <img src="./assets/img/masonmount.jpg" alt="">
             </div>
           <div class="cmt-infor">
             <div class="comment-name">
-              Harry Maguire
+              Mason Mount 
             </div>
             <span class=" star">
               <i class="fa-regular fa-star"></i>
@@ -735,11 +926,11 @@
         <div class="comment-content">
           <div class="cmt-head">
             <div class="cmt-image">
-              <img src="./assets/img/pic-1.png" alt="">
+              <img src="./assets/img/jadonsancho.jpg" alt="">
             </div>
           <div class="cmt-infor">
             <div class="comment-name">
-              Harry Maguire
+              Jadon Sancho
             </div>
             <span class=" star">
               <i class="fa-regular fa-star"></i>
@@ -759,15 +950,17 @@
           </p>
         </div>
         </div>
+
+
         <div class="swiper-slide slider col p-4 t-6 m-12">
           <div class="comment-content">
             <div class="cmt-head">
               <div class="cmt-image">
-                <img src="./assets/img/pic-1.png" alt="">
+                <img src="./assets/img/philfoden.jpg" alt="">
               </div>
-             <div class="cmt-infor">
+            <div class="cmt-infor">
               <div class="comment-name">
-                Harry Maguire
+                Phil Foden
               </div>
               <span class=" star">
                 <i class="fa-regular fa-star"></i>
@@ -775,36 +968,8 @@
                 <i class="fa-regular fa-star"></i>
                 <i class="fa-regular fa-star"></i>
                 <i class="fa-regular fa-star"></i>
-              </span>
-             </div>
-              <span class="cmt-icon">
-                <i class="fas fa-quote-right"></i>
               </span>
             </div>
-  
-            <p class="cmt-phara">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat consequuntur repellendus aperiam deserunt nihil, corporis fugit voluptatibus voluptate totam neque illo placeat eius quis laborum aspernatur quibusdam. Ipsum, magni.
-            </p>
-          </div>
-        </div>
-        <div class="swiper-slide slider col p-4 t-6 m-12">
-          <div class="comment-content">
-            <div class="cmt-head">
-              <div class="cmt-image">
-                <img src="./assets/img/pic-1.png" alt="">
-              </div>
-             <div class="cmt-infor">
-              <div class="comment-name">
-                Harry Maguire
-              </div>
-              <span class=" star">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </span>
-             </div>
               <span class="cmt-icon">
                 <i class="fas fa-quote-right"></i>
               </span>
@@ -815,6 +980,67 @@
             </p>
           </div>
           </div>
+
+
+          <div class="swiper-slide slider col p-4 t-6 m-12">
+            <div class="comment-content">
+              <div class="cmt-head">
+                <div class="cmt-image">
+                  <img src="./assets/img/reecejames.jpg" alt="">
+                </div>
+              <div class="cmt-infor">
+                <div class="comment-name">
+                  Reece James
+                </div>
+                <span class=" star">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </span>
+              </div>
+                <span class="cmt-icon">
+                  <i class="fas fa-quote-right"></i>
+                </span>
+              </div>
+    
+              <p class="cmt-phara">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat consequuntur repellendus aperiam deserunt nihil, corporis fugit voluptatibus voluptate totam neque illo placeat eius quis laborum aspernatur quibusdam. Ipsum, magni.
+              </p>
+            </div>
+            </div>
+
+
+            <div class="swiper-slide slider col p-4 t-6 m-12">
+              <div class="comment-content">
+                <div class="cmt-head">
+                  <div class="cmt-image">
+                    <img src="./assets/img/Rice.jpg" alt="">
+                  </div>
+                <div class="cmt-infor">
+                  <div class="comment-name">
+                    Delcan Rice
+                  </div>
+                  <span class=" star">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </span>
+                </div>
+                  <span class="cmt-icon">
+                    <i class="fas fa-quote-right"></i>
+                  </span>
+                </div>
+      
+                <p class="cmt-phara">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat consequuntur repellendus aperiam deserunt nihil, corporis fugit voluptatibus voluptate totam neque illo placeat eius quis laborum aspernatur quibusdam. Ipsum, magni.
+                </p>
+              </div>
+              </div>
+
     </div>
   </div>
 </section>
@@ -828,35 +1054,40 @@
       FREE AND FAST
     </p>
        <div class="form">
-        <form class="form-order">
+        <form id="form-order">
           <div class="form-information">
-            <div class="fomr-group">
+            <div class="form-group ">
               <label for="fullname">Your Name</label>
-              <input type="text" placeholder="Fill your name" id="fullname">
+              <input name="fullname" type="text" placeholder="Eg.Nguyen Duc Thang" id="fullname" spellcheck="false">
+              <span class="form-message"></span>
             </div>
   
-            <div class="fomr-group">
+            <div class="form-group">
               <label for="number">Your Number</label>
-              <input type="number" placeholder="Fill your number" id="number">
+              <input name="number" type="text" placeholder="Eg.0-9" id="number">
+              <span class="form-message"></span>
             </div>
   
-            <div class="fomr-group">
+            <div class="form-group">
               <label for="address">Your Address</label>
-              <input type="text" placeholder="Fill your Address" id="address">
+              <input name="address" type="text" placeholder="Eg. Your Address" id="address" spellcheck="false">
+              <button class="address-localtion button-buy">
+                 Localtion!
+              </button>
+              <div class="mapImg"></div>
+              <span class="form-message"></span>
             </div>
 
           <div class="form-plain height" >
-            <div class="fomr-group">
+            <div class="form-group">
               <label for="message">Your Message</label>
-              <input type="text" placeholder="Fill your message" id="message">
+              <input name="message" type="text" placeholder="Eg. Your message" id="message" spellcheck="false">
+              <span class="form-message"></span>
             </div>
           </div>
         </form>
 
        <div class="order-now">
-         <span class="buy-notifical">Buy Food ToBe Happy 
-           <i class="fa-regular fa-face-smile"></i>
-          </span>
           <button class="button-more button-buy show newBuy">Buy Now</button>
        </div>
       </div>
@@ -873,12 +1104,24 @@
         <h1 class="footer-heading">Quick Links
         </h1>
         <ul class="footer-list">
-          <a href="#home" class="footer-item quick-link">Home </a>
-          <a href="#Dishes grid" class="footer-item quick-link">Dishes</a>
-          <a href="#about" class="footer-item quick-link">About</a>
-          <a href="#menu" class="footer-item quick-link">Menu</a>
-          <a href="#comment" class="footer-item quick-link">Review</a>
-          <a href="#order" class="footer-item quick-link">Order</a>
+          <li class="footer-list_item">
+            <a href="#home" class="footer-item quick-link">Home </a>
+          </li>
+          <li class="footer-list_item">
+            <a href="#Dishes grid" class="footer-item quick-link">Dishes</a>
+          </li>
+          <li class="footer-list_item">
+            <a href="#about" class="footer-item quick-link">About</a>
+          </li>
+          <li class="footer-list_item">
+            <a href="#menu" class="footer-item quick-link">Menu</a>
+          </li>
+          <li class="footer-list_item">
+           <a href="#comment" class="footer-item quick-link">Review</a>
+          </li>
+          <li class="footer-list_item">
+           <a href="#order" class="footer-item quick-link">Order</a>
+          </li>
         </ul>
      </div>
     </div>
@@ -888,8 +1131,18 @@
         <h1 class="footer-heading">Contact Infor
         </h1>
         <ul class="footer-list">
-          <a class="footer-item"><i class='bx bxs-phone-call'></i>0346540662</a>
-          <a class="footer-item"><i class="fa-solid fa-envelope"></i>ndt13102003@gmail.com</a>
+          <li class="footer-list_item border-none">
+            <span class="footer-item">
+              <i class='bx bxs-phone-call'></i>
+              <h6 class="footer-item_detail">0346540662</h6>
+            </span>
+          </li>
+         <li class="footer-list_item border-none">
+          <span class="footer-item">
+            <i class="fa-solid fa-envelope"></i>
+            <h6 class="footer-item_detail">ndt13102003@gmail.com</h6>
+          </span>
+         </li>
         </ul>
       </div>
     </div>
@@ -899,9 +1152,18 @@
       <h1 class="footer-heading">Quick Infor
       </h1>
       <ul class="footer-list">
-        <a href="https://www.facebook.com/nguyenducthang1310" class="footer-item facebook"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/thagnngyuen13/" class="footer-item instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://github.com/TechNguyen" class="footer-item"><i class="fa-brands fa-github"></i></a>
+        <li class="footer-list_item border-none ">
+          <a href="https://www.facebook.com/nguyenducthang1310" class="footer-item facebook"><i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li class="footer-list_item border-none">
+          <a href="https://www.instagram.com/thagnngyuen13/" class="footer-item instagram"><i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li class="footer-list_item border-none">
+          <a href="https://github.com/TechNguyen" class="footer-item"><i class="fa-brands fa-github"></i>
+          </a>
+        </li>
       </ul>
      </div>
     </div>
@@ -914,5 +1176,7 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script type="module" src="./javascript/main.js"></script>
-<script src="./javascript/React.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script>
+<script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="https://www.google.com/maps/embed/v1/MAP_MODE?key=AIzaSyDNI_ZWPqvdS6r6gPVO50I4TlYkfkZdXh8&parameters"></script>
 </html>
